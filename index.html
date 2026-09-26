@@ -38,6 +38,10 @@ body{background:var(--g-negro);color:var(--g-hueso)}
 .archive-footer{background:var(--g-verde);color:#000}
 footer{color:var(--g-hueso-2)}
 a:focus-visible{outline-color:var(--g-verde)}
+
+ 
+:root{--g-grain:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27240%27 height=%27240%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%27.85%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3CfeColorMatrix type=%27saturate%27 values=%270%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27 opacity=%27.28%27/%3E%3C/svg%3E")}
+body,.process,.contact,.archive-footer,.entry,.log article{background-image:var(--g-grain)!important;background-size:240px 240px}
  
 .archive{padding-top:72px}
 .entries{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;counter-reset:ficha}
